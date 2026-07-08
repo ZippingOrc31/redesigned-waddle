@@ -32,7 +32,7 @@ Supports long-duration recordings
 Tools Panel
 Optional modules included:
 
-ControllerClicker — virtual controller clicker
+ControllerClicker — virtual controller clicker(xinput devices only for now)
 
 MouseClicker — rapid mouse clicker
 Both modules integrate with the main UI.
