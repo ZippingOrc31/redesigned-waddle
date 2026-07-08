@@ -1,7 +1,11 @@
 Macro Recorder Suite  
 A lightweight Python macro recorder for capturing and replaying keyboard and mouse actions.
 Designed for automation, repetitive tasks, and experimentation with Python input hooks.
+
+
 EXE in RELEASES SECTION >>>>
+
+
 📌 Overview
 The Macro Recorder Suite records keyboard and mouse events, saves them into a simple .x macro format, and replays them with accurate timing.
 It includes optional clicker modules and a minimal, custom‑styled UI.
