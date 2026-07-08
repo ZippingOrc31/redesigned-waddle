@@ -55,6 +55,8 @@ TO BE DONE ***
 🚧 Upcoming Features
 These are the next major upgrades planned before the project transitions toward a C++ rewrite:
 
+**Scheduling of recorded macros with system clock**
+
 🖼️ Image‑Based Detection Engine
 A new detection subsystem that will allow macros to react to what’s on the screen.
 Planned capabilities include:
