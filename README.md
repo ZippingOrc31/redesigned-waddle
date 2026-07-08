@@ -1,52 +1,48 @@
+Macro Recorder Suite
+A lightweight Python macro recorder for capturing and replaying keyboard and mouse actions.
+Designed for automation, repetitive tasks, and experimentation with Python input hooks.
+
 📌 Overview
-The Macro Recorder Suite captures keyboard and mouse actions, stores them in an obfuscated .x macro format, and replays them with accurate timing.
-It includes a unified tools panel with optional clicker modules and a clean, semi‑transparent UI.
+The Macro Recorder Suite records keyboard and mouse events, saves them into a simple .x macro format, and replays them with accurate timing.
+It includes optional clicker modules and a minimal, custom‑styled UI.
 
-This project is built for:
+This project is ideal for:
 
-Automation scripting
+Automating repetitive workflows
 
-Repetitive task execution
+Testing input sequences
 
-Game macro experimentation
+Learning how Python handles event hooks
 
-Workflow prototyping
-
-Learning how input hooks & event loops work in Python
+Building your own automation tools on top of this base
 
 ✨ Features
 Macro Recording
-Records keyboard + mouse events
+Captures keyboard and mouse events
 
-High‑accuracy timing
+Accurate timing between actions
 
-Relative movement mode with optional screenshot anchors
-
-Obfuscated command storage for safer macro sharing
+Saves macros in a simple .x format
 
 Macro Playback
-Smooth replay with consistent timing
+Replays macros with consistent timing
 
-Supports long-duration macros
-
-Visual offset engine adapts to UI movement
+Supports long-duration recordings
 
 Tools Panel
-Includes optional modules:
+Optional modules included:
 
-ControllerClicker — virtual controller macro clicker
+ControllerClicker — virtual controller clicker
 
-MouseClicker — rapid-fire mouse clicker
-Both tools integrate directly into the main UI.
+MouseClicker — rapid mouse clicker
+Both modules integrate with the main UI.
 
 UI / UX
-Semi‑transparent light grey theme
+Clean, minimal layout
 
 Custom window chrome
 
-Clean layout with collapsible panels
-
-Brightened interface for visibility in dark environments
+Tools panel for quick access to modules
 
 📁 File Structure
 Code
@@ -54,15 +50,15 @@ Code
     rapdi.pyw
     controller clicker.pyw
     mouse clicker.pyw
-    assets/
     macros/
+    assets/
 rapdi.pyw — main macro recorder
 
 controller clicker.pyw — controller clicker module
 
 mouse clicker.pyw — mouse clicker module
 
-macros/ — saved .x macro files
+macros/ — saved macro files
 
 assets/ — UI resources
 
@@ -70,51 +66,56 @@ assets/ — UI resources
 Requirements
 Python 3.10+
 
-Windows OS (recommended)
+Windows OS recommended
 
-pynput, PIL, tkinter (included by default on Windows)
+Dependencies: pynput, tkinter, PIL
 
 Run the Recorder
 bash
 python rapdi.pyw
 Record a Macro
-Open the Macro Recorder
+Launch the Macro Recorder
 
-Press Start Recording
+Click Start Recording
 
 Perform your actions
 
-Press Stop Recording
+Click Stop Recording
 
 Save your macro (.x format)
 
 Play a Macro
 Load a macro file
 
-Press Play
+Click Play
 
-Watch the automation run
+The automation runs immediately
 
-🛠️ Building an EXE (Optional)
+🛠️ Optional: Build an EXE
 Compatible with PyInstaller:
 
 bash
 pyinstaller --noconsole --onefile rapdi.pyw
-If you include the clicker modules, bundle them in the same directory.
+Place clicker modules in the same directory if you want them included.
 
 🐞 Known Issues
-Visual offset anchors may drift in games with dynamic FOV changes
-
 Controller virtualization layer is experimental
 
 Some UI elements may behave differently on non‑Windows systems
 
-📜 License
-MIT License — feel free to fork, modify, and contribute.
+Macro timing may vary slightly depending on system load
+
+📜 License — Mozilla Public License 2.0
+This project is licensed under the MPL 2.0, allowing you to:
+
+Keep your core files open
+
+Release obfuscated or proprietary extensions
+
+Mix open and closed modules safely
+
+You retain full copyright over your work.
 
 🤝 Contributing
 Pull requests are welcome.
-If you want to add modules (auto‑hotkey style tools, new clickers, UI themes), open an issue first so we can discuss the design.
-
-💬 Credits
-Created by Dustin — built for learning, experimenting, and pushing Python automation further.
+If you want to add new modules or expand the macro format, open an issue first.
