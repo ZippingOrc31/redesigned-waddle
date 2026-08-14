@@ -1,104 +1,109 @@
-Macro Recorder Suite  
-A lightweight Python macro recorder for capturing and replaying keyboard and mouse actions.
-Designed for automation, repetitive tasks, and experimentation with Python input hooks.
+MACRO RECORDER SUITE — PROJECT OVERVIEW
 
+Macro Recorder Suite is a lightweight Python-based automation toolkit designed for capturing, saving, and replaying keyboard and mouse actions. The suite includes optional clicker modules, a soundboard application, voice-controlled macro playback, and a custom borderless UI with dynamic resizing, theme customization, and layout persistence. It is built for automation, repetitive workflows, experimentation, prototyping, and controller-based automation.
 
-EXE in RELEASES SECTION >>>>
+------------------------------------------------------------
+FEATURES
+------------------------------------------------------------
 
+MACRO RECORDING
+- Captures keyboard and mouse events
+- Records accurate timing between actions
+- Supports long-duration recordings
+- Saves macros in a simple .x format
+- Records relative and absolute mouse movement
+- Records scroll wheel and click states
+- Filters unsupported keys for stability
 
-📌 Overview
-The Macro Recorder Suite records keyboard and mouse events, saves them into a simple .x macro format, and replays them with accurate timing.
-It includes optional clicker modules and a minimal, custom‑styled UI.
+MACRO PLAYBACK
+- Replays macros with consistent timing
+- Supports infinite loops or fixed loop counts
+- Adjustable playback speed
+- Cleans up stuck keys after playback
+- Works reliably across long recordings
 
-✨ Features
-Macro Recording
-Captures keyboard and mouse events
+VOICE CONTROL PLAYBACK
+- Dynamic voice-triggered macro playback
+- Keyword-based activation
+- Optional authentication phrase (coming soon)
+- Integrated with the suite’s audio routing
+- Works alongside all other modules
 
-Accurate timing between actions
+TOOLS PANEL
+- ControllerClicker: Virtual controller clicker (XInput devices only for now)
+- MouseClicker: Rapid mouse clicker with adjustable rate
+- SoundboardApp: Custom soundboard module with Voicemeeter routing
+- Voicemeeter Extension: Complimentary audio routing layer for voice control, soundboard playback, and macro audio triggers
+- All modules can be toggled dynamically inside the launcher
 
-Saves macros in a simple .x format
+LAUNCHER AND UI
+- Borderless, draggable, semi-transparent window
+- Scrollable macro panel with invisible scrollbars
+- Dynamic window resizing (Window + and Window -)
+- Custom resize handle in bottom-right corner
+- Scale controls for zooming macro content (Scale + and Scale -)
+- Right sidebar occupies approximately ten percent of the window
+- Compact grid layout for tool buttons
+- Theme customization window with color pickers
+- Theme presets loaded from theme.json
+- Save and load theme files (.theme or .json)
+- Layout persistence (geometry, sash position, scale)
+- Smooth resizing and snapping behavior
+- Stable toggle system for embedded modules
 
-Macro Playback
-Replays macros with consistent timing
+------------------------------------------------------------
+KNOWN ISSUES
+------------------------------------------------------------
+- Controller virtualization layer is experimental
+- Some UI elements may behave differently on non-Windows systems
+- Macro timing may vary slightly depending on system load
+- Scrollbars are intentionally hidden; mouse wheel is required for scrolling
+- Soundboard latency may vary depending on audio backend
+- Voice control accuracy depends on microphone quality and environment
+- Window resizing and management is under development
 
-Supports long-duration recordings
+------------------------------------------------------------
+LICENSE — MOZILLA PUBLIC LICENSE 2.0
+------------------------------------------------------------
+This project is licensed under the MPL 2.0, allowing:
+- Open core files
+- Proprietary or obfuscated extensions
+- Mixed open and closed modules
+- Full copyright retention
 
-Tools Panel
-Optional modules included:
+------------------------------------------------------------
+CONTRIBUTING
+------------------------------------------------------------
+Pull requests are welcome. If you want to add new modules or expand the macro format, open an issue first. Contributions to the launcher, detection engine, controller subsystem, or UI improvements are encouraged.
 
-ControllerClicker — virtual controller clicker(xinput devices only for now)
+------------------------------------------------------------
+UPCOMING FEATURES
+------------------------------------------------------------
 
-MouseClicker — rapid mouse clicker
-Both modules integrate with the main UI.
+IMAGE-BASED DETECTION ENGINE
+- Screenshot-based object detection
+- Pixel-pattern matching for UI elements
+- Trigger-based macros (run when an image appears)
+- Optional low-memory color-compressed screenshot format
+- High reliability for IT workflows and game automation
+- Intelligent macros that adapt to screen conditions
 
-UI / UX
-Clean, minimal layout
+ADVANCED CONTROLLER RECORDING AND REPLAY
+- Full controller input capture (sticks, triggers, buttons)
+- High-precision analog movement timing
+- Replay engine simulating real controller behavior
+- Improved virtual controller layer
+- Mapping profiles for different games or applications
+- Complete controller automation toolkit
 
-🐞 Known Issues
-Controller virtualization layer is experimental
-Some UI elements may behave differently on non‑Windows systems
-Macro timing may vary slightly depending on system load
+C++ REWRITE (LONG-TERM GOAL)
+- Lower latency
+- Higher performance
+- Better threading
+- Native Windows integration
+- More reliable controller virtualization
+- Python remains the prototyping layer; final engine becomes C++ powered
 
-📜 License — Mozilla Public License 2.0
-This project is licensed under the MPL 2.0, allowing you to:
-
-Keep your core files open
-Release obfuscated or proprietary extensions
-Mix open and closed modules safely
-You retain full copyright over your work.
-
-🤝 Contributing
-Pull requests are welcome.
-If you want to add new modules or expand the macro format, open an issue first.
-
-TO BE DONE ***
-🚧 Upcoming Features
-These are the next major upgrades planned before the project transitions toward a C++ rewrite:
-
-**Scheduling of recorded macros with system clock**
-
-🖼️ Image‑Based Detection Engine
-A new detection subsystem that will allow macros to react to what’s on the screen.
-Planned capabilities include:
-
-Screenshot‑based object detection
-
-Pixel‑pattern matching for UI elements
-
-Trigger‑based macros (run when an image appears)
-
-Optional low‑memory color‑compressed screenshot format
-
-High reliability for IT workflows and game automation
-
-This system will enable intelligent macros that adapt to changing screen conditions instead of relying only on static coordinates.
-
-🎮 Advanced Controller Recording & Replay
-Expanding beyond the current clicker module, this feature will introduce:
-
-Full controller input capture (sticks, triggers, buttons)
-
-High‑precision timing for analog movement
-
-Replay engine capable of simulating real controller behavior
-
-Virtual controller layer improvements
-
-Optional mapping profiles for different games or apps
-
-This will turn the suite into a complete controller automation toolkit, not just a clicker.
-
-🛠️ C++ Rewrite (Long‑Term Goal)
-After the above features are complete, the project will begin transitioning toward a C++ implementation for:
-
-Lower latency
-
-Higher performance
-
-Better threading
-
-Native Windows integration
-
-More reliable controller virtualization
-
-Python will remain the prototyping layer, but the final engine will be C++‑powered.
+------------------------------------------------------------
+END OF DOCUMENT
+------------------------------------------------------------
