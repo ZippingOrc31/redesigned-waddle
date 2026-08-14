@@ -60,8 +60,6 @@ KNOWN ISSUES
 - Scrollbars are intentionally hidden; mouse wheel is required for scrolling
 - Soundboard latency may vary depending on audio backend
 - Voice control accuracy depends on microphone quality and environment
-- Window resizing and management is under development
-- Macro recorder doesnt record 3 key combos (patch in development)
 - Macro recorder conflicts and causes mouse lag and general sluggishness if two hotkeys are bound to the same action or 2 voice commands are bound to the same action (patch in development)
 
 ------------------------------------------------------------
