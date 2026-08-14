@@ -6,6 +6,7 @@ Macro Recorder Suite is a lightweight Python-based automation toolkit designed f
 FEATURES
 ------------------------------------------------------------
 Known issues:: Macro recorder doesnt record 3 key combos (patch in development), Macro recorder conflicts and causes mouse lag and general sluggishness if two hotkeys are bound to the same action or 2 voice commands are bound to the same action (patch in development)
+
 MACRO RECORDING
 - Captures keyboard and mouse events
 - Records accurate timing between actions
