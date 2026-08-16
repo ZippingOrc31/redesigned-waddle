@@ -24,7 +24,7 @@ MACRO PLAYBACK
 
 VOICE CONTROL PLAYBACK
 - Dynamic voice-triggered macro playback
-- Keyword-based activation
+- Keyword-based activation + Hard coded Keyword deactivation ("terminate" and "stop playback") at any time (while voice listener is active) to cancel your macro playback. 
 - Optional authentication phrase (coming soon)
 
 LAUNCHER AND UI
