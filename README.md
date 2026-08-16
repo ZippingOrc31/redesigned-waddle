@@ -26,15 +26,6 @@ VOICE CONTROL PLAYBACK
 - Dynamic voice-triggered macro playback
 - Keyword-based activation
 - Optional authentication phrase (coming soon)
-- Integrated with the suite’s audio routing
-- Works alongside all other modules
-
-TOOLS PANEL
-- ControllerClicker: Virtual controller clicker (XInput devices only for now)
-- MouseClicker: Rapid mouse clicker with adjustable rate
-- SoundboardApp: Custom soundboard module with Voicemeeter routing
-- Voicemeeter Extension: Complimentary audio routing layer for voice control, soundboard playback, and macro audio triggers
-- All modules can be toggled dynamically inside the launcher
 
 LAUNCHER AND UI
 - Borderless, draggable, semi-transparent window
@@ -57,8 +48,6 @@ KNOWN ISSUES
 - Controller virtualization layer is experimental
 - Some UI elements may behave differently on non-Windows systems
 - Macro timing may vary slightly depending on system load
-- Scrollbars are intentionally hidden; mouse wheel is required for scrolling
-- Soundboard latency may vary depending on audio backend
 - Voice control accuracy depends on microphone quality and environment
 - Macro recorder conflicts and causes mouse lag and general sluggishness if two hotkeys are bound to the same action or 2 voice commands are bound to the same action (patch in development)
 
