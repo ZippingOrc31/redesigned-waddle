@@ -28,19 +28,7 @@ VOICE CONTROL PLAYBACK
 - Optional authentication phrase (coming soon)
 
 LAUNCHER AND UI
-- Borderless, draggable, semi-transparent window
-- Scrollable macro panel with invisible scrollbars
-- Dynamic window resizing (Window + and Window -)
-- Custom resize handle in bottom-right corner
-- Scale controls for zooming macro content (Scale + and Scale -)
-- Right sidebar occupies approximately ten percent of the window
-- Compact grid layout for tool buttons
-- Theme customization window with color pickers
-- Theme presets loaded from theme.json
-- Save and load theme files (.theme or .json)
-- Layout persistence (geometry, sash position, scale)
-- Smooth resizing and snapping behavior
-- Stable toggle system for embedded modules
+-Under Development
 
 ------------------------------------------------------------
 KNOWN ISSUES
